@@ -1,0 +1,90 @@
+@font-face {
+	font-weight: blod;
+	font-style: blod;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: block; }
+.clearfix:after { clear: both; }
+/* 以下没发现控制哪里 */
+body {
+      background:#ffffff;
+	font-weight: 100%px;
+	font-size: 1.2em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+/* 以下为非点击时字体颜色 */
+a {
+	color: #2cc185;
+	text-decoration: none;
+	outline: none;
+}
+/* 以下为鼠标放上时字体改变的颜色 */
+a:hover, a:focus {
+	color: #EE1289;
+}
+/* 以下字体高度、大小、字数、框高度的设置 */
+.container > section {
+	padding: 4.5em 0;
+	font-size: 1em;
+	min-height: 1%;
+}
+
+
+/* CSS Document */
+
+*{ margin:0; padding:0; font-family:"微软雅黑"; text-shadow:none;}
+body {min-width: 320px;}
+a{ text-decoration:none;}
+ul{ list-style-type:none;}
+input{ outline:none;}
+img{ border:0;}
+
+@media screen and (max-width: 372px) and (min-width: 320px){
+body {
+font-size: 12px;
+}}
+@media screen and (max-width: 425px) and (min-width: 373px){
+body {
+font-size: 14px;
+}}
+@media screen and (max-width: 479px) and (min-width: 426px){
+body {
+font-size: 16px;
+}}
+@media screen and (max-width: 532px) and (min-width: 480px){
+body {
+font-size: 18px;
+}}
+@media screen and (max-width: 585px) and (min-width: 533px){
+body {
+font-size: 20px;
+}}
+@media screen and (max-width: 640px) and (min-width: 586px){
+body {
+font-size: 22px;
+}}
+@media screen and (min-width: 640px){
+body {
+font-size: 24px;
+}}
+/* 背景色控制器 */
+bj-hui{ ;}
+.bold{ font-weight:bold;}
+.banner{ width:100%; margin-bottom:0.5em;}
+/* 以下列表控制器 */
+.list-pic li a{ display:block; background:#fff; position:relative; min-height:11em; margin-bottom:0.7em;}
+.list-pic li a:hover{ background:#efefef;}
+.list-pic li .pic{ width:11em; position:absolute; top:0em; left:0em;}
+.list-pic li .neirong{ margin-left:11em; padding:0em 0.7em;}
+.neirong .biao{ width:2em;}
+.neirong .dbt{ font-size:1.3em; color:#333; white-space:nowrap; margin-top:0.1em; margin-bottom:0.15em;}
+.neirong .xzsm{ font-size:1em; color:#666; overflow:hidden;  white-space:nowrap; text-overflow:ellipsis;}
+.neirong .jiage{ font-size:1em; color:#F27600;}
+.neirong .jiage .jgsz{ font-weight:bold; font-size:1.1em; }

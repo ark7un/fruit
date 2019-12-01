@@ -1,0 +1,122 @@
+/* Individual tab styles */
+
+/*****************************/
+/* Icon box */
+/*****************************/
+/* 标签整体背景色 */
+.tabs-style-iconbox nav {
+       position:fixed;
+       width:100%;
+       top:0;left:0;
+       z-index:7;
+       font-size: 0.85em;
+       background: rgba(47,79,79,0.9);
+}
+/* 标签横向排列控制|标签颜色渐变 */
+.tabs-style-iconbox nav ul li a {
+	overflow: visible;
+	padding: 2em 0;
+	line-height: 1;
+	-webkit-transition: color 0.7s;
+	transition: color 1s;
+}
+
+/* 字体粗细大小控制 */
+.tabs-style-iconbox nav ul li a span {
+	font-weight: 700;
+	font-size: 1.2em;	
+}
+.tabs-style-iconbox nav ul li.tab-current {
+	z-index: 100;
+}
+/* 标签点击后背景色 */
+.tabs-style-iconbox nav ul li.tab-current a {
+	background: rgba(37,128,137,1);
+        box-shadow: 0px 0 0 #F0FFFF;
+}
+/* 倒三角颜色、大小设置 */
+.tabs-style-iconbox nav ul li.tab-current a::after {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	border-width: 10px;
+	border-top-color: rgba(37,128,137,1);
+	content: '';
+	pointer-events: none;
+}
+/* 餐单栏分割线颜色 */
+.tabs-style-iconbox nav ul li:first-child::before,
+.tabs-style-iconbox nav ul li::after {
+	position: absolute;
+	top: 20%;
+	right: 0;
+	z-index: 1;
+	width: 1px;
+	height: 70%;
+	background: rgba(60,179,113,0.7);
+	content: '';
+}
+
+.tabs-style-iconbox nav ul li:first-child::before {
+	right: auto;
+	left: 0;
+}
+
+.tabs-style-iconbox .icon::before {
+	display: block;
+	margin: 0 0 0.25em 0;
+}
+
+
+/*****************************/
+/* Triangle and line */
+/*****************************/
+/* 鼠标触碰、点击时标签字体颜色渐变 */
+.tabs-style-linetriangle nav a {
+	overflow: visible;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	-webkit-transition: color 0.2s;
+	transition: color 1.2s;
+}
+/* 标签间距控制器 */
+.tabs-style-linetriangle nav a span {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 1.3em;
+}
+
+.tabs-style-linetriangle nav li.tab-current a:after, 
+.tabs-style-linetriangle nav li.tab-current a:before {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	content: '';
+	pointer-events: none;
+}
+/* 倒三角颜色控制器 */
+.tabs-style-linetriangle nav li.tab-current a:after {
+	margin-left: -10px;
+	border-width: 10px;
+	border-top-color: #ff012d;
+}
+
+.tabs-style-linetriangle nav li.tab-current a:before {
+	margin-left: -11px;
+	border-width: 11px;
+	border-top-color: rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 55em) {
+	.tabs-style-linetriangle nav {
+		font-size: 0.6em;
+	}
+}
